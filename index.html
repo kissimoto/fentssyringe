@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fentanyl Syringe Pump</title>
+    <link href="fentloadisyr2.css" rel='stylesheet' type=text/css>
+</head>
+
+<body>
+<div class = "row">
+    <header> Fentanyl 50 μg/ml (0.05 mg/ml)</header>
+  <div class = "leftside">
+        <h1>Fentanyl Loading Dose</h1>
+        <h3 class='intro'> Dose range 2.5-10 μg/kg</h3>
+
+    <div class='container'>
+        <label for=weight>Animal's weight in kg</label>
+        <input type=number  id=weight required value='' placeholder=kg>
+        <br>
+        <label for=loadingDoseRate>Loading Dose Rate</label>
+        <input type=number  id=loadingDoseRate required value='' placeholder=μg/kg>
+     <br>
+    <button onclick=fentaprocess() id='submitbutton'>Calculate</button>
+   </div>
+       <div id=result2></div>
+       <script src=fentanylloadnsyringe.js></script>
+ </div>
+
+    <div class = "rightside">
+
+            <h1>Fentanyl Syringe Pump CRI Calculator</h1>
+            <br>
+        <div class='container2'>
+
+            <!-- <label for=weight>Animal's weight in kg</label>
+            <input type=number  id=weight required value='' placeholder=kg>
+            <br> -->
+            <label for=criDuration>CRI Duration</label>
+            <input type=number  id=criDuration required value='' placeholder=hrs>
+            <br>
+            <label for=dose_rate>Enter Dose Rate</label>
+            <input type='number' id=dose_rate required value='' placeholder=microgram/kg/hr>
+            <br>
+            <label for='syringeSize'>Syringe Size</label>
+            <select id='bagSize'>
+                <option value='2'>2</option>
+                <option value='5'>5</option>
+                <option value='10'>10</option>
+                <option value='20'>20</option>
+            </select>
+            <br>
+            <button onclick=fentanylprocess() id='submitbutton'>Calculate</button>
+        </div>
+
+    <div id=result></div>
+    <script src=fentanylloadnsyringe.js></script>
+</div>
+
+</div>
+</body>
+</html>
