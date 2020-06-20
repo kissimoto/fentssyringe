@@ -28,21 +28,19 @@
 
     <div class = "rightside">
 
-            <h1>Fentanyl Syringe Pump CRI Calculator</h1>
-            <br>
+            <h1>Fentanyl Syringe Pump CRI</h1>
+            <h3 class='intro'>2.5-10 μg/kg/hr intraoperative<br>
+             1-5 μg/kg/hr postoperative</h3>
         <div class='container2'>
 
-            <!-- <label for=weight>Animal's weight in kg</label>
-            <input type=number  id=weight required value='' placeholder=kg>
-            <br> -->
             <label for=criDuration>CRI Duration</label>
             <input type=number  id=criDuration required value='' placeholder=hrs>
             <br>
             <label for=dose_rate>Enter Dose Rate</label>
-            <input type='number' id=dose_rate required value='' placeholder=microgram/kg/hr>
+            <input type='number' id=dose_rate required value='' placeholder=μg/kg/hr>
             <br>
-            <label for='syringeSize'>Syringe Size</label>
-            <select id='bagSize'>
+            <label for='syringeSize'>Syringe Size (ml)</label>
+            <select id='syringeSize'>
                 <option value='2'>2</option>
                 <option value='5'>5</option>
                 <option value='10'>10</option>
@@ -51,9 +49,9 @@
             <br>
             <button onclick=fentanylprocess() id='submitbutton'>Calculate</button>
         </div>
-
     <div id=result></div>
     <script src=fentanylloadnsyringe.js></script>
+
 </div>
 
 </div>
