@@ -11,7 +11,7 @@
     <header> Fentanyl 50 μg/ml (0.05 mg/ml)</header>
   <div class = "leftside">
         <h1>Fentanyl Loading Dose</h1>
-        <h3 class='intro'> Dose range 2.5-10 μg/kg</h3>
+        <h3 class='intro'> Dogs and Cats 2.5-10 μg/kg</h3>
 
     <div class='container'>
         <label for=weight>Animal's weight (kg)</label>
@@ -29,8 +29,8 @@
     <div class = "rightside">
 
             <h1>Fentanyl Syringe Pump CRI</h1>
-            <h3 class='intro'>2.5-10 μg/kg/hr intraoperative<br>
-             1-5 μg/kg/hr postoperative</h3>
+            <h3 class='intro'>Dogs and Cats <br>Intraoperative 2.5-10 μg/kg/hr<br>
+                Postoperative 1-5 μg/kg/hr</h3>
         <div class='container2'>
 
             <label for=criDuration>CRI Duration (hr)</label>
@@ -41,10 +41,11 @@
             <br>
             <label for='syringeSize'>Syringe Size (ml)</label>
             <select id='syringeSize'>
-                <option value='2'>2</option>
-                <option value='5'>5</option>
-                <option value='10'>10</option>
-                <option value='20'>20</option>
+                <option value='2'>2 ml</option>
+                <option value='5'>5 ml</option>
+                <option value='10'>10 ml</option>
+                <option value='20'>20 ml</option>
+                <option value='50'>50 ml</option>
             </select>
             <br>
             <button onclick=fentanylprocess() id='submitbutton'>Calculate</button>
