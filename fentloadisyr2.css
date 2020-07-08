@@ -59,7 +59,7 @@ input {
     background: #e7eee8;
     color: #101356;
   } 
-#submitbutton {
+#submitbutton, #reloadButton, #refreshButton {
     width: 10em;
     height: 2em;
     background:  #101356;;
@@ -87,10 +87,19 @@ color: #FEE3F5;
   }
 
 header{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 color: #08334F;
 padding-top: 0.5em;
 padding-left: 10em;
 font-size: 2em;
 font-weight: 700;
   }
+
+  #error, #error2 {
+  color: rgb(250, 16, 16);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  }
+
+
