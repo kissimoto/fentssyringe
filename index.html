@@ -20,9 +20,13 @@
         <label for=loadingDoseRate>Loading Dose Rate (μg/kg)</label>
         <input type=number  id=loadingDoseRate required value='' placeholder=μg/kg>
      <br>
+     <span>
     <button onclick=fentaprocess() id='submitbutton'>Calculate</button>
+     <button onclick="reload()" id='reloadButton'>Change Dose</button>
+    </span>
    </div>
        <div id=result2></div>
+       <p id="error"></p>
        <script src=fentanylloadnsyringe.js></script>
  </div>
 
@@ -41,16 +45,19 @@
             <br>
             <label for='syringeSize'>Syringe Size (ml)</label>
             <select id='syringeSize'>
-                <option value='2'>2 ml</option>
                 <option value='5'>5 ml</option>
                 <option value='10'>10 ml</option>
                 <option value='20'>20 ml</option>
                 <option value='50'>50 ml</option>
             </select>
             <br>
+            <span>
             <button onclick=fentanylprocess() id='submitbutton'>Calculate</button>
+            <button onclick="refresh()" id='refreshButton'>Reset Value</button>
+        </span>
         </div>
     <div id=result></div>
+    <p id="error2"></p>
     <script src=fentanylloadnsyringe.js></script>
 
 </div>
